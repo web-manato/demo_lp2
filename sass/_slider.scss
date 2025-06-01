@@ -1,0 +1,16 @@
+@use "_mixin";
+@use "_variable" as g;
+
+.splide{
+    margin-top: 24px;
+}
+@include mixin.mq("pc"){
+    .splide{
+        margin-top: 65px;
+    }
+}
+.splide__slide{
+    width: 30%;
+    height: auto;
+    text-align: center;
+}

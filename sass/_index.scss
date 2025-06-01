@@ -1,0 +1,654 @@
+@use "_mixin";
+@use "_variable" as g;
+
+
+// レイアウト
+.ly_btn__kvCta{
+    margin-top: 18px;
+}
+@include mixin.mq("pc"){
+    .ly_btn__kvCta{
+        margin-top: 0;
+        width: 15%;
+    }
+}
+.ly_reason_ttl{
+    text-align: center;
+}
+// クエスチョン
+.ly_faq_question{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    cursor: pointer;
+}
+// ポストタイトル
+.ly_post_ttl{
+    margin-top: 12px;
+}
+
+// ブロックモジュール
+// キービジュアル
+.bl_kv{
+    background: g.$bg-light-blue;
+}
+.bl_kv_inner{
+    position: relative;
+}
+// コピー
+.bl_kv_copyGroup{
+    text-align: center;
+}
+.bl_kv_copy{
+    font-size: 20px;
+}
+.bl_kv_copy2{
+    font-size: 40px;
+    font-weight: 700;
+    color: g.$font-color-blue;
+    margin-top: 19px;
+    line-height: 130%;
+}
+@include mixin.mq("pc"){
+    .bl_kv_copyGroup{
+        text-align: left;
+    }
+    .bl_kv_copy{
+        font-size: 24px;
+        letter-spacing: 0.1em;
+    }
+    .bl_kv_copy2{
+        font-size: 50px;
+        letter-spacing: 0.1em;
+    }
+}
+// テキスト
+.bl_kv_txt{
+    margin-top: 22px;
+    line-height: 180%;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+}
+@include mixin.mq("pc"){
+    .bl_kv_txt{
+        font-size: 20px;
+        margin-top: 70px;
+        letter-spacing: 0.2em;
+        line-height: 200%;
+    }
+}
+// 画像
+.bl_kv_imgGroup{
+    margin-top: 40px;
+    position: relative;
+
+    img{
+        width: 100%;
+    }
+}
+.bl_kv_img_txt{
+    font-size: 13px;
+    font-weight: 500;
+    color: g.$font-color-white;
+    text-align: center;
+    line-height: 160%;
+    background: g.$bg-blue;
+    padding: 18px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    span{
+        padding: 5px;
+        font-size: 20px;
+    }
+}
+@include mixin.mq("tab"){
+    .bl_kv_imgGroup{
+        width: 50%;
+        margin: 40px auto 0 auto;
+    }
+}
+@include mixin.mq("pc"){
+    .bl_kv_imgGroup{
+        width: 35%;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .bl_kv_img_txt{
+        font-size: 20px;
+        padding: 25px;
+        top: -40px;
+        left: -20px;
+
+        span{
+            font-size: 30px;
+        }
+    }
+}
+// キービジュアル内cta
+.bl_kv_cta{
+    margin-top: 25px;
+    padding: 17px;
+    background: g.$bg-royal-blue;
+    border-radius: 10px;
+}
+.bl_kv_cta_txt{
+    color: g.$font-color-white;
+    font-weight: 500;
+    line-height: 175%;
+}
+@include mixin.mq("pc"){
+    .bl_kv_cta{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 100px;
+        transform: translateY(90%);
+    }
+}
+
+
+// 選ばれる理由
+.bl_reasonGroup{
+    display: grid;
+    gap: 40px;
+}
+@include mixin.mq("pc"){
+    .bl_reasonGroup{
+        grid-template-columns: repeat(3,1fr);
+        gap: 42px;
+    }
+}
+// カード
+.bl_reason{
+    padding: 30px 20px;
+    border: 1px solid g.$border-grey;
+    border-radius: 10px;
+    box-shadow: 8px 8px 13px g.$shadow-grey;
+}
+// タイトル
+.bl_reason_ttl_jp{
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+
+    .bl_reason_ttl_jp_blue{
+        font-size: 30px;
+        display: inline-block;
+        color: g.$font-color-blue;
+    }
+}
+.bl_reason_ttl_en{
+    margin-top: 12px;
+    color: g.$font-color-red;
+    font-family: g.$font-family-en;
+    font-size: 24px;
+}
+// 画像
+.bl_reason_imgWrapper{
+    display: block;
+    width: 60%;
+    margin: 22px auto 0 auto;
+    position: relative;
+
+    img{
+        width: 100%;
+    }
+}
+@include mixin.mq("pc"){
+    .bl_reason_imgWrapper{
+        height: 200px;
+
+        img{
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+        }
+    }
+}
+// テキスト
+.bl_reason_txt{
+    margin-top: 24px;
+    font-size: 14px;
+    line-height: 180%;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+}
+
+
+// できること
+.bl_serviceGroup{
+    display: grid;
+    gap: 20px;
+}
+@include mixin.mq("pc"){
+    .bl_serviceGroup{
+        grid-template-columns: repeat(3,1fr);
+        gap: 40px;
+    }
+}
+// カード
+.bl_service{
+    padding: 21px;
+    display: flex;
+    justify-content: space-between;
+    gap: 22px;
+    border: 1px solid g.$border-grey;
+    border-radius: 10px;
+    box-shadow: 8px 8px 13px g.$shadow-grey;
+    position: relative;
+}
+// 画像
+.bl_service_img{
+    width: 50%;
+
+    img{
+        width: 100%;
+    }
+}
+.bl_service:nth-child(2){
+    .bl_service_img{
+        img{
+            width: 80%;
+        }
+    }
+}
+@include mixin.mq("tab"){
+    .bl_service_img{
+        width: 20%;
+    }
+}
+@include mixin.mq("pc"){
+    .bl_service_img{
+        width: 50%;
+    }
+}
+// タイトル
+.bl_service_ttl{
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    position: relative;
+    z-index: 1;
+}
+// テキスト
+.bl_service_txt{
+    margin-top: 12px;
+    line-height: 150%;
+    letter-spacing: 0.15em;
+}
+// ラベル
+.bl_service_label{
+    background: g.$bg-blue;
+    color: g.$font-color-white;
+    font-size: 14px;
+    letter-spacing: 0.15em;
+    border-radius: 0 10px 0 10px;
+    padding: 10px 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+@include mixin.mq("pc"){
+    .bl_service_label{
+        bottom: auto;
+        left: auto;
+        top: 0;
+        right: 0;
+    }
+}
+
+
+// ギフト
+// テキスト
+.bl_gift_txtGroup{
+    line-height: 160%;
+    letter-spacing: 0.1em;
+    margin-top: 24px;
+}
+.bl_gift_txt + .bl_gift_txt{
+    margin-top: 14px;
+}
+@include mixin.mq("pc"){
+    .bl_gift_txtGroup{
+        margin-top: 65px;
+    }
+}
+// 注釈
+.bl_gift_anotation{
+    font-size: 14px;
+    margin-top: 21px;
+
+    a{
+        color: g.$font-color-blue;
+        text-decoration: underline;
+    }
+}
+
+
+// セキュリティ
+.bl_security_txtGroup{
+    margin-top: 12px;
+    line-height: 175%;
+}
+@include mixin.mq("pc"){
+    .bl_security_txtGroup{
+        margin-top: 48px;
+    }
+}
+
+
+// 使い方
+// タイトル
+.bl_howTo_ttl{
+    max-width: 300px;
+    width: 90%;
+    margin: 17px auto 0 auto;
+    font-size: 18px;
+    background: g.$bg-light-blue2;
+    padding: 12px 80px;
+    border-radius: 20px;
+    position: relative;
+    text-align: center;
+}
+.bl_howTo_ttl::before{
+    display: block;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: g.$bg-light-blue2;
+    transform: translate(-50%, 0%);
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+}
+// コンテンツ
+.bl_howTo_group{
+    max-width: 1200px;
+    margin: 32px auto 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: scroll;
+    padding: 12px;
+    -ms-overflow-style: none;
+}
+.bl_howTo_group::-webkit-scrollbar{
+    display: none;
+}
+// カード
+.bl_howTo{
+    width: 260px;
+    height: 230px;
+    flex-shrink: 0;
+    padding: 25px 22px;
+    border: 1px solid g.$border-grey;
+    border-radius: 10px;
+    box-shadow: 8px 8px 13px g.$shadow-grey;
+}
+// タイトル
+.bl_howTo_ttl_en{
+    font-size: 20px;
+    color: g.$font-color-blue;
+    text-align: center;
+    font-family: g.$font-family-en;
+    letter-spacing: 0.1em;
+    line-height: 165%;
+}
+.bl_howTo_ttl_jp{
+    width: 155px;
+    padding: 6px 0;
+    color: g.$font-color-white;
+    background: g.$bg-royal-blue;
+    text-align: center;
+    margin: 12px auto 0 auto;
+    border-radius: 0 10px 0 10px;
+}
+// テキスト
+.bl_howTo_txt{
+    margin-top: 28px;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    line-height: 185%;
+
+    a{
+        color: g.$font-color-blue;
+        text-decoration: underline;
+    }
+}
+// 繋ぎのライン
+.bl_howTo_line{
+    flex-shrink: 0;
+    width: 24px;
+    height: 3px;
+    background: g.$border-blue;
+}
+
+
+// ご利用者様の声
+.bl_voiceGroup{
+    display: grid;
+    gap: 20px;
+}
+@include mixin.mq("pc"){
+    .bl_voiceGroup{
+        margin-top: 48px;
+        grid-template-columns: repeat(2,1fr);
+        gap: 42px;
+    }
+}
+// カード
+.bl_voice{
+    padding: 21px;
+    border: 1px solid g.$border-grey;
+    border-radius: 10px;
+    box-shadow: 8px 8px 13px g.$shadow-grey;
+}
+// テキスト
+.bl_voice_txt{
+    letter-spacing: 0.1em;
+    line-height: 175%;
+}
+// ラベル
+.bl_voice_labelGroup{
+    margin-top: 22px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.bl_voice_label{
+    border-radius: 10px;
+    display: inline-block;
+    padding: 4px 10px;
+    color: g.$font-color-white;
+    background: g.$bg-grey;
+    font-size: 12px;
+}
+
+
+// よくあるご質問
+.bl_faqGroup{
+    display: grid;
+    gap: 20px;
+    max-width: 965px;
+    margin: 24px auto;
+}
+@include mixin.mq("tab"){
+    .bl_faqGroup{
+        margin-top: 42px;
+    }
+}
+// カード
+.bl_faq{
+    padding: 17px 13px;
+    border: 1px solid g.$border-grey;
+    border-radius: 10px;
+    box-shadow: 8px 8px 13px g.$shadow-grey;
+    transition: all 0.3s;
+}
+@include mixin.mq("pc"){
+    .bl_faq{
+        padding: 24px 18px;
+    }
+}
+// クエスチョン
+.bl_faq_question{
+    font-weight: 600;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.bl_faq_question::before{
+    content: "Q";
+    display: inline-block;
+    font-size: 20px;
+    color: g.$font-color-blue;
+    font-family: g.$font-family-en;
+}
+@include mixin.mq("pc"){
+    .bl_faq_question{
+        font-size: 18px;
+    }
+}
+// アイコン
+.bl_faq_question_ico{
+    width: 15px;
+    height: 15px;
+}
+.bl_faq_question_ico_line{
+    display: block;
+    width: 15px;
+    height: 2px;
+    background: g.$border-blue;
+    transform: translateY(7.5px);
+}
+.bl_faq_question_ico_line2{
+    display: block;
+    width: 15px;
+    height: 2px;
+    background: g.$border-blue;
+    transform: rotate(90deg) translateX(5px);
+    transition: all 0.3s;
+}
+// 回答
+.bl_faq_answer{
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: all 0.3s;
+}
+.bl_faq_answer::before{
+    content: "A";
+    display: inline-block;
+    font-size: 20px;
+    color: g.$font-color-blue;
+    font-family: g.$font-family-en;
+}
+@include mixin.mq("pc"){
+    .bl_faq_answer{
+        font-size: 16px;
+    }
+}
+// アクティブ時の動き
+.is-active .bl_faq_question_ico_line2{
+    transform: translateY(5px) rotate(180deg);
+    visibility: hidden;
+    opacity: 0;
+}
+.is-active + .bl_faq_answer{
+    margin-top: 14px;
+    max-height: 100px;
+    opacity: 1;
+}
+
+
+// ノウハウ記事
+.bl_postGroup{
+    margin-top: 38px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 26px;
+}
+@include mixin.mq("pc"){
+    .bl_postGroup{
+        grid-template-columns: repeat(4,1fr);
+        gap: 32px;
+    }
+}
+// サムネイル
+.bl_post_thumbnailWrapper{
+    img{
+        width: 100%;
+    }
+}
+// タイトル
+.bl_post_ttl{
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    line-height: 150%;
+}
+
+
+// 無料で作ろう
+.bl_cta{
+    margin-top: 21px;
+}
+// 上部画像
+.bl_cta_imgWrapper{
+    width: 220px;
+    margin: 32px auto 0 auto;
+
+    img{
+        width: 100%;
+    }
+}
+// テキスト
+.bl_cta_txtGroup{
+    color: g.$font-color-white;
+    max-width: 760px;
+    margin: 24px auto 0 auto;
+}
+@include mixin.mq("pc"){
+    .bl_cta_txtGroup{
+        margin: 42px auto 0 auto;
+        text-align: center;
+    }
+}
+.bl_cta_txt{
+    letter-spacing: 0.1em;
+    line-height: 175%;
+}
+.bl_cta_txt + .bl_cta_txt{
+    margin-top: 24px;
+}
+// 下部画像
+.bl_cta_imgWrapper{
+    display: block;
+    margin-top: 32px;
+
+    img{
+        width: 100%;
+    }
+}
+
+// フローティングcta
+.bl_floatCta{
+    width: 100%;
+    background: g.$bg-white;
+    text-align: center;
+    padding: 20px 50px;
+    border-top: 1px solid g.$border-blue;
+    position: fixed;
+    bottom: 0;
+}

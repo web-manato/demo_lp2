@@ -1,0 +1,59 @@
+@use "_mixin";
+@use "_variable" as g;
+
+// レイアウト
+.ly_header{
+    width: 100%;
+    padding: 11px 0;
+    position: relative;
+    z-index: 999;
+}
+@include mixin.mq("pc"){
+    .ly_header{
+        padding: 30px 0;
+    }
+}
+
+
+// ブロックモジュール
+.bl_header{
+    box-shadow: 0 3px 6px g.$shadow-grey;
+}
+.bl_header_inner{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1366px;
+}
+@include mixin.mq("pc"){
+    .bl_header_inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+// ヘッダーロゴ
+.bl_header_logo{
+    width: 65px;
+    margin: 0 auto;
+
+    img{
+        width: 100%;
+    }
+}
+@include mixin.mq("pc"){
+    .bl_header_logo{
+        width: 120px;
+        margin: 0;
+    }
+}
+// ヘッダーボタン
+// pc非表示
+.ly_header_btn{
+    display: none;
+}
+@include mixin.mq("pc"){
+    .ly_header_btn{
+        display: block;
+    }
+}

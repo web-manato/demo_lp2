@@ -1,0 +1,84 @@
+@use "_mixin";
+@use "_variable" as g;
+
+// レイアウト
+.ly_footer{
+    width: 100%;
+    padding: 24px 0 134px 0;
+}
+.ly_footer_address{
+    margin-top: 28px;
+}
+@include mixin.mq("pc"){
+    .ly_footer{
+        padding: 80px 0 134px 0;
+    }
+}
+
+// ブロックモジュール
+.bl_footer{
+    background: g.$bg-black;
+    color: g.$font-color-white;
+}
+.bl_footer_inner{
+    width: 90%;
+    margin: 0 auto;
+}
+@include mixin.mq("pc"){
+    .bl_footer_inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+}
+
+// ロゴ
+.bl_footer_logo{
+    text-align: center;
+}
+// アドレス
+.bl_footer_address{
+    line-height: 165%;
+    letter-spacing: 0.1em;
+}
+// ナビゲーションメニュー
+.bl_footer_nav{
+    margin-top: 41px;
+}
+.bl_footer_nav_list{
+    display: grid;
+    gap: 20px;
+    font-size: 14px;
+}
+.bl_footer_nav_listItem::after{
+    content: url(../img/footer_nav_img.svg);
+    width: 13px;
+    height: 13px;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+@include mixin.mq("pc"){
+    .bl_footer_nav_list{
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px 60px;
+    }
+}
+// snsロゴ
+.bl_footer_snsLogo_group{
+    margin-top: 80px;
+    display: flex;
+    gap: 40px;
+}
+@include mixin.mq("pc"){
+    .bl_footer_snsLogo_group{
+        margin-top: 0;
+    }
+}
+// コピーライト
+.bl_footer_copyRight_wrapper{
+    margin-top: 85px;
+}
+.bl_footer_copyRight{
+    font-weight: 400;
+}
+

@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="http://www.google.com/s2/favicons?domain=ファビコンを取得したいサイトURL">
+    <link rel="apple-touch-icon-precomposed" href="画像のURL" />
+    <meta name="msapplication-TileImage" content="画像のURL" />
+    <meta name="msapplication-TileColor" content="カラーコード（例：#F89174）"/>
+    <title>デモページ</title>
+    <meta name="description" content="まなとが制作したLPデモです。">
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
+
+    <!-- js -->
+    <script src="js/main.js" type="module"></script>
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <!-- Splide -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
+</head>
+<body>
+
+    <!-- ヘッダー -->
+    <header class="ly_header bl_header">
+        <div class="bl_header_inner">
+            <!-- ロゴ -->
+            <h1 class="bl_header_logo">
+                <img src="img/header_logo.svg" alt="ManatoDemo">
+            </h1>
+
+            <!-- ボタン -->
+            <div class="ly_header_btn">
+                <a href="#" class="el_btn el_btn__bgRed bl_header_btn">請求書を作る</a>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- キービジュアル -->
+        <section class="ly_kv bl_kv">
+            <div class="bl_cont_inner bl_kv_inner">
+
+                <div class="bl_kv_txtGroup">
+                    <!-- コピー -->
+                    <div class="bl_kv_copyGroup">
+                        <p class="bl_kv_copy">簡単・早い・無料！</p>
+                        <h2 class="bl_kv_copy2">見積書・請求書<br class="un_lb">作成ツール</h2>
+                    </div>
+                    <!-- テキスト -->
+                    <p class="bl_kv_txt">
+                        ManatoDemoは、スマホでもPCでも、<br class="un_lb__reverse">
+                        ブラウザから早く簡単に見積書・請求書を<br class="un_lb__reverse">
+                        無料で作成できるサービスです。
+                    </p>
+                </div>
+                <!-- 画像 -->
+                <div class="bl_kv_imgGroup">
+                    <div class="bl_kv_img_txt">利用者<span>急増中</span>いま話題！</div>
+                    <picture>
+                        <source media="(max-width: 400px)" srcset="img/kv_img-1000px.png">
+                        <source media="(max-width: 500px)" srcset="img/kv_img-1500px.png">
+                        <source media="(max-width: 768px)" srcset="img/kv_img-2000px.png">
+                        <source media="(max-width: 1080px)" srcset="img/kv_img-2500px.png">
+                        <source media="(max-width: 2000px)" srcset="img/kv_img-3000px.png">
+                        <img src="img/kv_img-3500px.png" alt="">
+                    </picture>
+                </div>
+
+                <!-- キービジュアル内CTA -->
+                <div class="bl_kv_cta">
+                    <p class="bl_kv_cta_txt">
+                        作成した見積書・請求書はPDFで出力され、そのままメール・ビジネスチャットへ転送することが可能。<br class="un_lb_reverse">
+                        あなたの業務効率をアップさせます。
+                    </p>
+                    <div class="ly_btn ly_btn__kvCta">
+                        <a href="#" class="el_btn el_btn__reverse">無料で作る</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 選ばれる理由 -->
+        <section class="ly_cont ly_cont__reason">
+            <div class="bl_cont_inner">
+
+                <!-- セクションタイトル -->
+                <div class="ly_secTtl">
+                    <div>
+                        <span class="bl_secTtl_en">Reason</span>
+                        <h2 class="bl_secTtl_jp">
+                            DemoManatoが<br class="un_lb"><!--
+                            --><span class="bl_secTtl_jp_blue">選ばれる理由</span>
+                        </h2>
+                    </div>
+                    <!-- 画像 -->
+                    <picture class="bl_secTtl_imgWrapper">
+                        <source media="(max-width: 400px)" srcset="img/section_img-1000px.png">
+                        <source media="(max-width: 500px)" srcset="img/section_img-1500px.png">
+                        <source media="(max-width: 768px)" srcset="img/section_img-2000px.png">
+                        <source media="(max-width: 1080px)" srcset="img/section_img-2500px.png">
+                        <source media="(max-width: 2000px)" srcset="img/section_img-3000px.png">
+                        <img src="img/section_img-3500px.png" alt="">
+                    </picture>
+                </div>
+
+                <!-- コンテンツ -->
+                <ul class="bl_reasonGroup">
+
+                    <!-- 理由1 -->
+                    <li class="bl_reason js-fadeIn">
+                        <!-- タイトル -->
+                        <div class="ly_reason_ttl">
+                            <h3 class="bl_reason_ttl_jp">
+                                <span class="bl_reason_ttl_jp_blue">簡単</span><!--
+                                -->に作れる
+                            </h3>
+                            <span class="bl_reason_ttl_en">Easy!</span>
+                        </div>
+
+                        <!-- 画像 -->
+                        <picture class="bl_reason_imgWrapper">
+                            <source media="(max-width: 400px)" srcset="img/reason_img-1000px.png">
+                            <source media="(max-width: 500px)" srcset="img/reason_img-1500px.png">
+                            <source media="(max-width: 768px)" srcset="img/reason_img-2000px.png">
+                            <source media="(max-width: 1080px)" srcset="img/reason_img-2500px.png">
+                            <source media="(max-width: 2000px)" srcset="img/reason_img-3000px.png">
+                            <img src="img/reason_img-3500px.png" alt="">
+                        </picture>
+
+                        <!-- テキスト -->
+                        <p class="bl_reason_txt">
+                            親譲りの無鉄砲で小供の時から損ばかりしている。
+                            小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。
+                            なぜそんな無闇をしたと聞く人があるかも知れぬ。別段深い理由でも
+                        </p>
+                    </li>
+
+                    <!-- 理由2 -->
+                    <li class="bl_reason js-fadeIn">
+                        <!-- タイトル -->
+                        <div class="ly_reason_ttl">
+                            <h3 class="bl_reason_ttl_jp">
+                                <span class="bl_reason_ttl_jp_blue">早く</span><!--
+                                -->作れる
+                            </h3>
+                            <span class="bl_reason_ttl_en">Quickly!</span>
+                        </div>
+
+                        <!-- 画像 -->
+                        <picture class="bl_reason_imgWrapper">
+                            <source media="(max-width: 400px)" srcset="img/reason_img2-1000px.png">
+                            <source media="(max-width: 500px)" srcset="img/reason_img2-1500px.png">
+                            <source media="(max-width: 768px)" srcset="img/reason_img2-2000px.png">
+                            <source media="(max-width: 1080px)" srcset="img/reason_img2-2500px.png">
+                            <source media="(max-width: 2000px)" srcset="img/reason_img2-3000px.png">
+                            <img src="img/reason_img2-3500px.png" alt="">
+                        </picture>
+
+                        <!-- テキスト -->
+                        <p class="bl_reason_txt">
+                            親譲りの無鉄砲で小供の時から損ばかりしている。
+                            小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。
+                            なぜそんな無闇をしたと聞く人があるかも知れぬ。別段深い理由でも
+                        </p>
+                    </li>
+
+                    <!-- 理由3 -->
+                    <li class="bl_reason js-fadeIn">
+                        <!-- タイトル -->
+                        <div class="ly_reason_ttl">
+                            <h3 class="bl_reason_ttl_jp">
+                                <span class="bl_reason_ttl_jp_blue">無料</span><!--
+                                -->で作れる
+                            </h3>
+                            <span class="bl_reason_ttl_en">Free!</span>
+                        </div>
+
+                        <!-- 画像 -->
+                        <picture class="bl_reason_imgWrapper">
+                            <source media="(max-width: 400px)" srcset="img/reason_img3-1000px.png">
+                            <source media="(max-width: 500px)" srcset="img/reason_img3-1500px.png">
+                            <source media="(max-width: 768px)" srcset="img/reason_img3-2000px.png">
+                            <source media="(max-width: 1080px)" srcset="img/reason_img3-2500px.png">
+                            <source media="(max-width: 2000px)" srcset="img/reason_img3-3000px.png">
+                            <img src="img/reason_img3-3500px.png" alt="">
+                        </picture>
+
+                        <!-- テキスト -->
+                        <p class="bl_reason_txt">
+                            親譲りの無鉄砲で小供の時から損ばかりしている。
+                            小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。
+                            なぜそんな無闇をしたと聞く人があるかも知れぬ。別段深い理由でも
+                        </p>
+                    </li>
+                </ul>
+
+                <div class="ly_btn">
+                    <div class="el_btn">無料で作る</div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- できること -->
+        <section class="ly_cont">
+            <div class="bl_cont_inner">
+
+                <!-- セクションタイトル -->
+                <div class="ly_secTtl ly_secTtl__reverse">
+                    <div>
+                        <span class="bl_secTtl_en">Service</span>
+                        <h2 class="bl_secTtl_jp">
+                            DemoManatoで<br class="un_lb"><!--
+                            --><span class="bl_secTtl_jp_blue">できること</span>
+                        </h2>
+                    </div>
+                    <!-- 画像 -->
+                    <picture class="bl_secTtl_imgWrapper">
+                        <source media="(max-width: 400px)" srcset="img/section_img-1000px.png">
+                        <source media="(max-width: 500px)" srcset="img/section_img-1500px.png">
+                        <source media="(max-width: 768px)" srcset="img/section_img-2000px.png">
+                        <source media="(max-width: 1080px)" srcset="img/section_img-2500px.png">
+                        <source media="(max-width: 2000px)" srcset="img/section_img-3000px.png">
+                        <img src="img/section_img-3500px.png" alt="">
+                    </picture>
+                </div>
+
+                <!-- コンテンツ -->
+                <ul class="bl_serviceGroup">
+
+                    <!-- サービス1 -->
+                    <li class="bl_service js-fadeIn">
+                        <!-- 画像 -->
+                        <div class="bl_service_img">
+                            <img src="img/service_img.svg" alt="">
+                        </div>
+                        <div>
+                            <h3 class="bl_service_ttl">見積書・請求書作成</h3>
+                            <p class="bl_service_txt">
+                                親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階
+                            </p>
+                        </div>
+                        <span class="bl_service_label">無料</span>
+                    </li>
+
+                    <!-- サービス2 -->
+                    <li class="bl_service js-fadeIn">
+                        <!-- 画像 -->
+                        <div class="bl_service_img">
+                            <img src="img/service_img2.svg" alt="">
+                        </div>
+                        <div>
+                            <h3 class="bl_service_ttl">PDFダウンロード</h3>
+                            <p class="bl_service_txt">
+                                親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階
+                            </p>
+                        </div>
+                        <span class="bl_service_label">無料</span>
+                    </li>
+
+                    <!-- サービス3 -->
+                    <li class="bl_service js-fadeIn">
+                        <!-- 画像 -->
+                        <div class="bl_service_img">
+                            <img src="img/service_img3.svg" alt="">
+                        </div>
+                        <div>
+                            <h3 class="bl_service_ttl">自動バックアップ</h3>
+                            <p class="bl_service_txt">
+                                親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階
+                            </p>
+                        </div>
+                        <span class="bl_service_label">無料</span>
+                    </li>
+
+                    <!-- サービス4 -->
+                    <li class="bl_service js-fadeIn">
+                        <!-- 画像 -->
+                        <div class="bl_service_img">
+                            <img src="img/service_img4.svg" alt="">
+                        </div>
+                        <div>
+                            <h3 class="bl_service_ttl">簡単コンビニ印刷</h3>
+                            <p class="bl_service_txt">
+                                親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階
+                            </p>
+                        </div>
+                        <span class="bl_service_label">無料</span>
+                    </li>
+                </ul>
+
+                <div class="ly_btn">
+                    <div class="el_btn">無料で作る</div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ギフト -->
+        <section class="ly_cont">
+
+            <div class="bl_cont_inner">
+                <!-- セクションタイトル -->
+                <div class="ly_secTtl">
+                    <div>
+                        <span class="bl_secTtl_en">Gift</span>
+                        <h2 class="bl_secTtl_jp">
+                            ポイントを貯めてギフトと交換できる
+                        </h2>
+                    </div>
+                </div>
+
+                <!-- スライダー -->
+                <div class="splide" aria-label="ギフトスライダー">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <img src="img/gift_ico.svg" alt="">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="img/gift_ico.svg" alt="">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="img/gift_ico.svg" alt="">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="img/gift_ico.svg" alt="">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="img/gift_ico.svg" alt="">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="img/gift_ico.svg" alt="">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="img/gift_ico.svg" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bl_gift_txtGroup">
+                    <p class="bl_gift_txt">
+                        親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階
+                    </p>
+                    <p class="bl_gift_txt">
+                        親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。
+                    </p>
+                    <p class="bl_gift_anotation">
+                        ※景品への交換は<!--
+                        --><a href="#">景品と交換のページ</a><!--
+                        -->から申請できます。
+                        Splideを使用してスライダーを作成しています。
+                    </p>
+                </div>
+
+                <div class="ly_btn">
+                    <div class="el_btn">無料で作る</div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- セキュリティ -->
+        <section class="ly_cont">
+            <div class="bl_cont_inner">
+
+                <!-- セクションタイトル -->
+                <div class="ly_secTtl">
+                    <!-- 画像 -->
+                    <picture class="bl_secTtl2_imgWrapper">
+                        <source media="(max-width: 400px)" srcset="img/security_img-1000px.png">
+                        <source media="(max-width: 500px)" srcset="img/security_img-1500px.png">
+                        <source media="(max-width: 768px)" srcset="img/security_img-2000px.png">
+                        <source media="(max-width: 1080px)" srcset="img/security_img-2500px.png">
+                        <source media="(max-width: 2000px)" srcset="img/security_img-3000px.png">
+                        <img src="img/security_img-3500px.png" alt="">
+                    </picture>
+                    <div>
+                        <span class="bl_secTtl_en bl_secTtl_en__mt">Security</span>
+                        <h2 class="bl_secTtl_jp">
+                            個人情報の<br class="un_lb">
+                            <span class="bl_secTtl_jp_blue">セキュリティ</span><!--
+                            -->も安心<br>
+                            <span class="bl_secTtl_jp_small">常時SSL化</span>
+                        </h2>
+                    </div>
+                </div>
+
+                <div class="bl_security_txtGroup">
+                    <p class="bl_security_txt">
+                        親譲りの無鉄砲で小供の時から損ばかりしている。
+                        小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。
+                        なぜそんな無闇をしたと聞く人があるかも知れぬ。別段深い理由でも
+                    </p>
+                    <p class="bl_gift_anotation">
+                        ※DemoManatoの個人情報保護方針については
+                        <a href="#">プライバシーポリシー</a>
+                        をご参照ください
+                    </p>
+                </div>
+
+                <div class="ly_btn">
+                    <div class="el_btn">無料で作る</div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 使い方 -->
+        <section class="ly_cont">
+
+            <div class="bl_cont_inner">
+                <!-- セクションタイトル -->
+                <div class="ly_secTtl ly_secTtl__nonImg">
+                    <div>
+                        <span class="bl_secTtl_en bl_secTtl_en__center">How to use</span>
+                        <h2 class="bl_secTtl_jp bl_secTtl_jp__center">
+                            DemoManatoの<!--
+                            --><span class="bl_secTtl_jp_blue">使い方</span>
+                        </h2>
+                    </div>
+                </div>
+                <!-- コンテンツ -->
+                <div class="bl_howTo_ttl">3ステップで完了</div>
+            </div>
+
+            <!-- コンテンツ -->
+            <ul class="bl_howTo_group js-fadeIn">
+
+                <!-- step1 -->
+                <li class="bl_howTo">
+                    <span class="bl_howTo_ttl_en">STEP1</span>
+                    <h3 class="bl_howTo_ttl_jp">作成画面に移動</h3>
+                    <p class="bl_howTo_txt">
+                        <a href="#">こちらのリンク</a><!--
+                        -->から作成画面に移動しましょう。
+                    </p>
+                </li>
+                <li class="bl_howTo_line"></li>
+                <!-- step2 -->
+                <li class="bl_howTo">
+                    <span class="bl_howTo_ttl_en">STEP2</span>
+                    <h3 class="bl_howTo_ttl_jp">必要情報の入力</h3>
+                    <p class="bl_howTo_txt">
+                        親譲りの無鉄砲で小供の時から損ばかりしている。
+                    </p>
+                </li>
+                <li class="bl_howTo_line"></li>
+                <!-- step3 -->
+                <li class="bl_howTo">
+                    <span class="bl_howTo_ttl_en">STEP3</span>
+                    <h3 class="bl_howTo_ttl_jp">PDF化・印刷</h3>
+                    <p class="bl_howTo_txt">
+                        親譲りの無鉄砲で小供の時から損ばかりしている。
+                    </p>
+                </li>
+            </ul>
+
+            <div class="bl_cont_inner">
+                <div class="ly_btn">
+                    <div class="el_btn">無料で作る</div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ユーザーの声 -->
+        <section class="ly_cont">
+            <div class="bl_cont_inner">
+
+                <!-- セクションタイトル -->
+                <div class="ly_secTtl">
+                    <div>
+                        <span class="bl_secTtl_en">User'svoice</span>
+                        <h2 class="bl_secTtl_jp">
+                            ご利用者様の<!--
+                            --><span class="bl_secTtl_jp_blue">声</span>
+                        </h2>
+                        <p class="bl_secTtl_txt">たくさんのご好評をいただいております！</p>
+                    </div>
+                    <!-- 画像 -->
+                    <picture class="bl_secTtl_imgWrapper">
+                        <source media="(max-width: 400px)" srcset="img/section_img-1000px.png">
+                        <source media="(max-width: 500px)" srcset="img/section_img-1500px.png">
+                        <source media="(max-width: 768px)" srcset="img/section_img-2000px.png">
+                        <source media="(max-width: 1080px)" srcset="img/section_img-2500px.png">
+                        <source media="(max-width: 2000px)" srcset="img/section_img-3000px.png">
+                        <img src="img/section_img-3500px.png" alt="">
+                    </picture>
+                </div>
+
+                <!-- コンテンツ -->
+                <ul class="bl_voiceGroup">
+
+                    <!-- お客様の声 -->
+                    <li class="bl_voice js-fadeIn">
+                        <!-- テキスト -->
+                        <p class="bl_voice_txt">
+                            親譲りの無鉄砲で小供の時から損ばかりしている。
+                            小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。
+                            なぜそんな無闇をしたと聞く人があるかも知れ
+                        </p>
+                        <!-- ラベル -->
+                        <div class="bl_voice_labelGroup">
+                            <span class="bl_voice_label">32歳</span>
+                            <span class="bl_voice_label">webエンジニア</span>
+                            <span class="bl_voice_label">フリーランス</span>
+                        </div>
+                    </li>
+
+                    <!-- お客様の声2 -->
+                    <li class="bl_voice js-fadeIn">
+                        <!-- テキスト -->
+                        <p class="bl_voice_txt">
+                            親譲りの無鉄砲で小供の時から損ばかりしている。
+                            小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。
+                            なぜそんな無闇をしたと聞く人があるかも知れ
+                        </p>
+                        <!-- ラベル -->
+                        <div class="bl_voice_labelGroup">
+                            <span class="bl_voice_label">32歳</span>
+                            <span class="bl_voice_label">webエンジニア</span>
+                            <span class="bl_voice_label">フリーランス</span>
+                        </div>
+                    </li>
+
+                    <!-- お客様の声3 -->
+                    <li class="bl_voice js-fadeIn">
+                        <!-- テキスト -->
+                        <p class="bl_voice_txt">
+                            親譲りの無鉄砲で小供の時から損ばかりしている。
+                            小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。
+                            なぜそんな無闇をしたと聞く人があるかも知れ
+                        </p>
+                        <!-- ラベル -->
+                        <div class="bl_voice_labelGroup">
+                            <span class="bl_voice_label">32歳</span>
+                            <span class="bl_voice_label">webエンジニア</span>
+                            <span class="bl_voice_label">フリーランス</span>
+                        </div>
+                    </li>
+
+                    <!-- お客様の声4 -->
+                    <li class="bl_voice js-fadeIn">
+                        <!-- テキスト -->
+                        <p class="bl_voice_txt">
+                            親譲りの無鉄砲で小供の時から損ばかりしている。
+                            小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。
+                            なぜそんな無闇をしたと聞く人があるかも知れ
+                        </p>
+                        <!-- ラベル -->
+                        <div class="bl_voice_labelGroup">
+                            <span class="bl_voice_label">32歳</span>
+                            <span class="bl_voice_label">webエンジニア</span>
+                            <span class="bl_voice_label">フリーランス</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+        <!-- よくある質問 -->
+        <section class="ly_cont">
+            <div class="bl_cont_inner">
+
+                <!-- セクションタイトル -->
+                <div class="ly_secTtl ly_secTtl__nonImg">
+                    <div>
+                        <span class="bl_secTtl_en bl_secTtl_en__center">FAQ</span>
+                        <h2 class="bl_secTtl_jp bl_secTtl_jp__center">
+                            よくある<!--
+                            --><span class="bl_secTtl_jp_blue">ご質問</span>
+                        </h2>
+                    </div>
+                </div>
+
+                <ul class="bl_faqGroup">
+
+                    <!-- よくある質問1 -->
+                    <li class="bl_faq js-fadeIn">
+                        <!-- 質問グループ -->
+                        <div class="ly_faq_question js-acordion">
+                            <!-- 質問 -->
+                            <h3 class="bl_faq_question">DemoManatoの利用は無料ですか？</h3>
+                            <!-- アイコン -->
+                            <div class="bl_faq_question_ico">
+                                <span class="bl_faq_question_ico_line"></span>
+                                <span class="bl_faq_question_ico_line2"></span>
+                            </div>
+                        </div>
+                        <!-- 回答 -->
+                        <p class="bl_faq_answer">
+                            回答が表示されます。
+                        </p>
+                    </li>
+
+                    <!-- よくある質問2 -->
+                    <li class="bl_faq js-fadeIn">
+                        <!-- 質問グループ -->
+                        <div class="ly_faq_question js-acordion">
+                            <!-- 質問 -->
+                            <h3 class="bl_faq_question">アカウント登録やログインは必要ですか？</h3>
+                            <!-- アイコン -->
+                            <div class="bl_faq_question_ico">
+                                <span class="bl_faq_question_ico_line"></span>
+                                <span class="bl_faq_question_ico_line2"></span>
+                            </div>
+                        </div>
+                        <!-- 回答 -->
+                        <p class="bl_faq_answer">
+                            回答が表示されます。
+                        </p>
+                    </li>
+
+                    <!-- よくある質問3 -->
+                    <li class="bl_faq js-fadeIn">
+                        <!-- 質問グループ -->
+                        <div class="ly_faq_question js-acordion">
+                            <!-- 質問 -->
+                            <h3 class="bl_faq_question">入力データは保存されますか？</h3>
+                            <!-- アイコン -->
+                            <div class="bl_faq_question_ico">
+                                <span class="bl_faq_question_ico_line"></span>
+                                <span class="bl_faq_question_ico_line2"></span>
+                            </div>
+                        </div>
+                        <!-- 回答 -->
+                        <p class="bl_faq_answer">
+                            回答が表示されます。
+                        </p>
+                    </li>
+
+                    <!-- よくある質問4 -->
+                    <li class="bl_faq js-fadeIn">
+                        <!-- 質問グループ -->
+                        <div class="ly_faq_question js-acordion">
+                            <!-- 質問 -->
+                            <h3 class="bl_faq_question">個人情報の管理やセキュリティは安全ですか？</h3>
+                            <!-- アイコン -->
+                            <div class="bl_faq_question_ico">
+                                <span class="bl_faq_question_ico_line"></span>
+                                <span class="bl_faq_question_ico_line2"></span>
+                            </div>
+                        </div>
+                        <!-- 回答 -->
+                        <p class="bl_faq_answer">
+                            回答が表示されます。
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+        <!-- ノウハウ記事 -->
+        <section class="ly_cont">
+            <div class="bl_cont_inner">
+
+                <!-- セクションタイトル -->
+                <div class="ly_secTtl">
+                    <div>
+                        <span class="bl_secTtl_en">Article</span>
+                        <h2 class="bl_secTtl_jp">
+                            ノウハウ<!--
+                            --><span class="bl_secTtl_jp_blue">記事</span>
+                        </h2>
+                        <p class="bl_secTtl_txt">業務効率化に役立つノウハウを紹介！</p>
+                    </div>
+                    <!-- 画像 -->
+                    <picture class="bl_secTtl_imgWrapper">
+                        <source media="(max-width: 400px)" srcset="img/section_img-1000px.png">
+                        <source media="(max-width: 500px)" srcset="img/section_img-1500px.png">
+                        <source media="(max-width: 768px)" srcset="img/section_img-2000px.png">
+                        <source media="(max-width: 1080px)" srcset="img/section_img-2500px.png">
+                        <source media="(max-width: 2000px)" srcset="img/section_img-3000px.png">
+                        <img src="img/section_img-3500px.png" alt="">
+                    </picture>
+                </div>
+
+                <!-- コンテンツ -->
+                <ul class="bl_postGroup">
+
+                    <!-- カード -->
+                    <li class="bl_post js-fadeIn">
+                        <figure>
+                            <!-- サムネイル -->
+                            <picture class="bl_post_thumbnailWrapper">
+                                <source media="(max-width: 400px)" srcset="img/post_thumbnail-1000px.png">
+                                <source media="(max-width: 500px)" srcset="img/post_thumbnail-1500px.png">
+                                <source media="(max-width: 768px)" srcset="img/post_thumbnail-2000px.png">
+                                <source media="(max-width: 1080px)" srcset="img/post_thumbnail-2500px.png">
+                                <source media="(max-width: 2000px)" srcset="img/post_thumbnail-3000px.png">
+                                <img src="img/post_thumbnail-3500px.png" alt="">
+                            </picture>
+                            <!-- 記事タイトル -->
+                            <figcaption class="ly_post_ttl">
+                                <h3 class="bl_post_ttl">
+                                    記事タイトル
+                                </h3>
+                            </figcaption>
+                        </figure>
+                    </li>
+
+                    <!-- カード -->
+                    <li class="bl_pos js-fadeIn">
+                        <figure>
+                            <!-- サムネイル -->
+                            <picture class="bl_post_thumbnailWrapper">
+                                <source media="(max-width: 400px)" srcset="img/post_thumbnail-1000px.png">
+                                <source media="(max-width: 500px)" srcset="img/post_thumbnail-1500px.png">
+                                <source media="(max-width: 768px)" srcset="img/post_thumbnail-2000px.png">
+                                <source media="(max-width: 1080px)" srcset="img/post_thumbnail-2500px.png">
+                                <source media="(max-width: 2000px)" srcset="img/post_thumbnail-3000px.png">
+                                <img src="img/post_thumbnail-3500px.png" alt="">
+                            </picture>
+                            <!-- 記事タイトル -->
+                            <figcaption class="ly_post_ttl">
+                                <h3 class="bl_post_ttl">
+                                    記事タイトル
+                                </h3>
+                            </figcaption>
+                        </figure>
+                    </li>
+
+                    <!-- カード -->
+                    <li class="bl_post js-fadeIn">
+                        <figure>
+                            <!-- サムネイル -->
+                            <picture class="bl_post_thumbnailWrapper">
+                                <source media="(max-width: 400px)" srcset="img/post_thumbnail-1000px.png">
+                                <source media="(max-width: 500px)" srcset="img/post_thumbnail-1500px.png">
+                                <source media="(max-width: 768px)" srcset="img/post_thumbnail-2000px.png">
+                                <source media="(max-width: 1080px)" srcset="img/post_thumbnail-2500px.png">
+                                <source media="(max-width: 2000px)" srcset="img/post_thumbnail-3000px.png">
+                                <img src="img/post_thumbnail-3500px.png" alt="">
+                            </picture>
+                            <!-- 記事タイトル -->
+                            <figcaption class="ly_post_ttl">
+                                <h3 class="bl_post_ttl">
+                                    記事タイトル
+                                </h3>
+                            </figcaption>
+                        </figure>
+                    </li>
+
+                    <!-- カード -->
+                    <li class="bl_post js-fadeIn">
+                        <figure>
+                            <!-- サムネイル -->
+                            <picture class="bl_post_thumbnailWrapper">
+                                <source media="(max-width: 400px)" srcset="img/post_thumbnail-1000px.png">
+                                <source media="(max-width: 500px)" srcset="img/post_thumbnail-1500px.png">
+                                <source media="(max-width: 768px)" srcset="img/post_thumbnail-2000px.png">
+                                <source media="(max-width: 1080px)" srcset="img/post_thumbnail-2500px.png">
+                                <source media="(max-width: 2000px)" srcset="img/post_thumbnail-3000px.png">
+                                <img src="img/post_thumbnail-3500px.png" alt="">
+                            </picture>
+                            <!-- 記事タイトル -->
+                            <figcaption class="ly_post_ttl">
+                                <h3 class="bl_post_ttl">
+                                    記事タイトル
+                                </h3>
+                            </figcaption>
+                        </figure>
+                    </li>
+                </ul>
+
+                <div class="ly_btn">
+                    <a href="#" class="el_btn el_btn__reverse el_btn__reverseLine">もっと読む</a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- まずは無料で作ろう -->
+        <section class="ly_cont bl_contBg_blue">
+            <div class="bl_cont_inner">
+
+                <!-- セクションタイトル -->
+                <div class="ly_secTtl ly_secTtl__nonImg">
+                    <div>
+                        <span class="bl_secTtl_en bl_secTtl_en__white bl_secTtl_en__center">Let's make it for free!</span>
+                        <h2 class="bl_secTtl_jp bl_secTtl_jp__white bl_secTtl_jp__center">
+                            まずは無料で作ろう
+                        </h2>
+                    </div>
+                </div>
+
+                <!-- 画像 -->
+                <picture class="bl_cta_imgWrapper">
+                    <source media="(max-width: 400px)" srcset="img/section_img-1000px.png">
+                    <source media="(max-width: 500px)" srcset="img/section_img-1500px.png">
+                    <source media="(max-width: 768px)" srcset="img/section_img-2000px.png">
+                    <source media="(max-width: 1080px)" srcset="img/section_img-2500px.png">
+                    <source media="(max-width: 2000px)" srcset="img/section_img-3000px.png">
+                    <img src="img/section_img-3500px.png" alt="">
+                </picture>
+
+                <!-- コンテンツ -->
+                <div class="bl_cta">
+                    <!-- テキスト -->
+                    <div class="bl_cta_txtGroup">
+                        <p class="bl_cta_txt">
+                            親譲りの無鉄砲で小供の時から損ばかりしている。
+                            小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。
+                            なぜそんな無闇をしたと聞く人があるかも知れぬ。
+                        </p>
+                        <p class="bl_cta_txt">
+                            親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降り
+                        </p>
+                        <p class="bl_cta_txt">
+                            親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降り
+                        </p>
+                    </div>
+
+                    <!-- 画像 -->
+                    <picture class="bl_cta_imgWrapper">
+                        <source media="(max-width: 400px)" srcset="img/section_img2-1000px.png">
+                        <source media="(max-width: 500px)" srcset="img/section_img2-1500px.png">
+                        <source media="(max-width: 768px)" srcset="img/section_img2-2000px.png">
+                        <source media="(max-width: 1080px)" srcset="img/section_img2-2500px.png">
+                        <source media="(max-width: 2000px)" srcset="img/section_img2-3000px.png">
+                        <img src="img/section_img2-3500px.png" alt="">
+                    </picture>
+
+                    <div class="ly_btn">
+                        <a href="#" class="el_btn el_btn__reverse">無料で作る</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer class="ly_footer bl_footer">
+        <div class="bl_footer_inner">
+
+            <div class="bl_pc_footer_left">
+                <!-- ロゴ -->
+                <div class="bl_footer_logo">
+                    <img src="img/footer_logo.svg" alt="ManatoDemo">
+                </div>
+                <!-- 住所 -->
+                <address class="ly_footer_address">
+                    <p class="bl_footer_address">
+                        株式会社 Demo Manato<br>
+                        東京都江東区ABC-DEF 11
+                    </p>
+                </address>
+            </div>
+
+            <nav class="bl_footer_nav">
+                <ul class="bl_footer_nav_list">
+                    <li class="bl_footer_nav_listItem">
+                        <a href="#">当サイトへのリンクについて</a>
+                    </li>
+                    <li class="bl_footer_nav_listItem">
+                        <a href="#">プライバシーポリシー</a>
+                    </li>
+                    <li class="bl_footer_nav_listItem">
+                        <a href="#">利用規約</a>
+                    </li>
+                    <li class="bl_footer_nav_listItem">
+                        <a href="#">会社概要</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="bl_pc_footer_right">
+                <!-- snsロゴ -->
+                <div class="bl_footer_snsLogo_group">
+                    <a href="#" class="bl_footer_snsLogo_wrapper">
+                        <img src="img/footer_threads_img.svg" alt="threads">
+                    </a>
+                    <a href="#" class="bl_footer_snsLogo_wrapper">
+                        <img src="img/footer_x_img.svg" alt="X">
+                    </a>
+                    <a href="#" class="bl_footer_snsLogo_wrapper">
+                        <img src="img/footer_facebook_img.svg" alt="Facebook">
+                    </a>
+                </div>
+                <!-- コピーライト -->
+                <div class="bl_footer_copyRight_wrapper">
+                    <small class="bl_footer_copyRight">&copy;2025 DemoManato</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="bl_floatCta">
+        <a href="#" class="el_btn el_btn__bgRed">請求書を作る</a>
+    </div>
+</body>
+</html>
