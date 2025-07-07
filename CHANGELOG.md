@@ -7,6 +7,7 @@
 -   **docs-** .htaccessの削除
 -   **feat-** meta情報の修正
 -   **feat-** ogp設定
+-   **feat-** ogp設定
 
 
 ---
