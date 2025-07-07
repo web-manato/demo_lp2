@@ -4,6 +4,7 @@
 
 ### 修正内容
 -   **docs-** CHANGELOG.mdとREADME.mdを追加しました。
+-   **docs-** .htaccessの削除
 
 
 ---
