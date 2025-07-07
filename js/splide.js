@@ -1,5 +1,5 @@
-document.addEventListener( 'DOMContentLoaded', function() {
-    var splide = new Splide( '.splide',{
+document.addEventListener('DOMContentLoaded', function() {
+    var splide = new Splide('.splide', {
         type: 'loop',
         perPage: 5,
         gap: '1rem',
@@ -10,10 +10,10 @@ document.addEventListener( 'DOMContentLoaded', function() {
         pagination: false,
 
         breakpoints: {
-            1080:{
+            1080: {
                 perPage: 3,
             }
         }
     });
     splide.mount();
-} );
+});

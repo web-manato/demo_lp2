@@ -372,11 +372,14 @@
     max-width: 1200px;
     margin: 32px auto 0 auto;
     display: flex;
-    justify-content: center;
     align-items: center;
     overflow: scroll;
     padding: 12px;
     -ms-overflow-style: none;
+
+    @include mixin.mq("pc") {
+        justify-content: center;
+    }
 }
 .bl_howTo_group::-webkit-scrollbar{
     display: none;
