@@ -59,7 +59,7 @@
         letter-spacing: 0.1em;
     }
     .bl_kv_copy2{
-        font-size: 50px;
+        font-size: clamp(20px,3vw,50px);
         letter-spacing: 0.1em;
     }
 }
