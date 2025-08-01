@@ -85,6 +85,7 @@
 
     img{
         width: 100%;
+        height: auto;
     }
 }
 .bl_kv_img_txt{
@@ -197,6 +198,7 @@
 
     img{
         width: 100%;
+        height: auto;
     }
 }
 @include mixin.mq("pc"){
@@ -249,12 +251,14 @@
 
     img{
         width: 100%;
+        height: auto;
     }
 }
 .bl_service:nth-child(2){
     .bl_service_img{
         img{
             width: 80%;
+            height: auto;
         }
     }
 }
@@ -592,6 +596,7 @@
 .bl_post_thumbnailWrapper{
     img{
         width: 100%;
+        height: auto;
     }
 }
 // タイトル
@@ -614,6 +619,7 @@
 
     img{
         width: 100%;
+        height: auto;
     }
 }
 // テキスト
@@ -642,6 +648,7 @@
 
     img{
         width: 100%;
+        height: auto;
     }
 }
 

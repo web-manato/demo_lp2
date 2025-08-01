@@ -161,6 +161,7 @@ span {
 }
 .bl_imgWrapper img {
   width: 100%;
+  height: auto;
 }
 
 .un_lb__reverse {
@@ -271,6 +272,7 @@ span {
 }
 .bl_secTtl_imgWrapper img {
   width: 100%;
+  height: auto;
 }
 
 .bl_secTtl2_imgWrapper {
@@ -278,6 +280,7 @@ span {
 }
 .bl_secTtl2_imgWrapper img {
   width: 100%;
+  height: auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -440,6 +443,7 @@ span {
 }
 .bl_kv_imgGroup img {
   width: 100%;
+  height: auto;
 }
 
 .bl_kv_img_txt {
@@ -549,6 +553,7 @@ span {
 }
 .bl_reason_imgWrapper img {
   width: 100%;
+  height: auto;
 }
 
 @media screen and (min-width: 1080px) {
@@ -597,10 +602,12 @@ span {
 }
 .bl_service_img img {
   width: 100%;
+  height: auto;
 }
 
 .bl_service:nth-child(2) .bl_service_img img {
   width: 80%;
+  height: auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -930,6 +937,7 @@ span {
 }
 .bl_post_thumbnailWrapper img {
   width: 100%;
+  height: auto;
 }
 
 .bl_post_ttl {
@@ -949,6 +957,7 @@ span {
 }
 .bl_cta_imgWrapper img {
   width: 100%;
+  height: auto;
 }
 
 .bl_cta_txtGroup {
@@ -978,6 +987,7 @@ span {
 }
 .bl_cta_imgWrapper img {
   width: 100%;
+  height: auto;
 }
 
 .bl_floatCta {

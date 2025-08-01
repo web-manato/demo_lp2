@@ -33,6 +33,7 @@ span{
 // 画像
 .bl_imgWrapper img{
     width: 100%;
+    height: auto;
 }
 
 // ユニークモジュール
@@ -143,6 +144,7 @@ span{
 
     img{
         width: 100%;
+        height: auto;
     }
 }
 .bl_secTtl2_imgWrapper{
@@ -150,6 +152,7 @@ span{
 
     img{
         width: 100%;
+        height: auto;
     }
 }
 @include mixin.mq("tab"){

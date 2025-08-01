@@ -3,12 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="画像パス">
-    <link rel="apple-touch-icon-precomposed" href="画像パス" />
-    <meta name="msapplication-TileImage" content="画像パス" />
-    <meta name="msapplication-TileColor" content="カラーコード（例：#F89174）" />
+    <link rel="apple-touch-icon-precomposed" href="画像パス">
+    <meta name="msapplication-TileImage" content="画像パス">
+    <meta name="msapplication-TileColor" content="カラーコード（例：#F89174）">
     <title>LPデモ</title>
     <meta name="description" content="まなとが制作したLPデモです。">
 
@@ -20,23 +20,24 @@
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One:wght@400&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet" media="print"
+        onload="this.media='all'">
 
     <!-- js -->
-    <script src="js/main.js" type="module"></script>
     <!-- GSAP -->
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js" defer></script>
     <!-- Splide -->
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js" defer></script>
+    <script src="js/main.js" type="module"></script>
 
     <!-- ogp -->
-    <meta property="og:url" content="portfolio.web-manato.com/lp/lp2/page">
+    <meta property="og:url" content="https://portfolio.web-manato.com/demo/lp1">
     <meta property="og:type" content="website">
     <meta property="og:title" content="LPデモ">
     <meta property="og:description" content="まなとが制作したLPデモです。">
     <meta property="og:site_name" content="LPデモ">
-    <meta property="og:image" content="img/ogp.png">
+    <meta property="og:image" content="https://portfolio.web-manato.com/demo/lp1/img/ogp.png">
 
 </head>
 
@@ -82,20 +83,9 @@
                     <div class="bl_kv_img_txt">利用者<span>急増中</span>いま話題！</div>
                     <picture>
                         <!-- WebP -->
-                        <source media="(max-width: 400px)" srcset="img/kv_img-1000px.webp" type="image/webp">
-                        <source media="(max-width: 500px)" srcset="img/kv_img-1500px.webp" type="image/webp">
-                        <source media="(max-width: 768px)" srcset="img/kv_img-2000px.webp" type="image/webp">
-                        <source media="(max-width: 1080px)" srcset="img/kv_img-2500px.webp" type="image/webp">
-                        <source media="(max-width: 2000px)" srcset="img/kv_img-3000px.webp" type="image/webp">
-                        <source srcset="img/kv_img-3500px.webp" type="image/webp">
+                        <source srcset="img/kv_img-2000px.webp" type="image/webp">
 
-                        <!-- 非対応時 -->
-                        <source media="(max-width: 400px)" srcset="img/kv_img-1000px.png">
-                        <source media="(max-width: 500px)" srcset="img/kv_img-1500px.png">
-                        <source media="(max-width: 768px)" srcset="img/kv_img-2000px.png">
-                        <source media="(max-width: 1080px)" srcset="img/kv_img-2500px.png">
-                        <source media="(max-width: 2000px)" srcset="img/kv_img-3000px.png">
-                        <img src="img/kv_img-3500px.png" alt="">
+                        <img src="img/kv_img-2000px.png" alt="" width="324" height="231" loading="eager">
                     </picture>
                 </div>
 
@@ -128,20 +118,10 @@
                     <!-- 画像 -->
                     <picture class="bl_secTtl_imgWrapper">
                         <!-- WebP -->
-                        <source media="(max-width: 400px)" srcset="img/section_img-1000px.webp" type="image/webp">
-                        <source media="(max-width: 500px)" srcset="img/section_img-1500px.webp" type="image/webp">
-                        <source media="(max-width: 768px)" srcset="img/section_img-2000px.webp" type="image/webp">
-                        <source media="(max-width: 1080px)" srcset="img/section_img-2500px.webp" type="image/webp">
-                        <source media="(max-width: 2000px)" srcset="img/section_img-3000px.webp" type="image/webp">
-                        <source srcset="img/section_img-3500px.webp" type="image/webp">
+                        <source srcset="img/section_img-2000px.webp" type="image/webp">
 
                         <!-- 非対応時 -->
-                        <source media=" (max-width: 400px)" srcset="img/section_img-1000px.png">
-                        <source media="(max-width: 500px)" srcset="img/section_img-1500px.png">
-                        <source media="(max-width: 768px)" srcset="img/section_img-2000px.png">
-                        <source media="(max-width: 1080px)" srcset="img/section_img-2500px.png">
-                        <source media="(max-width: 2000px)" srcset="img/section_img-3000px.png">
-                        <img src="img/section_img-3500px.png" alt="">
+                        <img src="img/section_img-2000px.png" alt="" width="293" height="148">
                     </picture>
                 </div>
 
@@ -161,20 +141,10 @@
                         <!-- 画像 -->
                         <picture class="bl_reason_imgWrapper">
                             <!-- WebP -->
-                            <source media="(max-width: 400px)" srcset="img/reason_img-1000px.webp" type="image/webp">
-                            <source media="(max-width: 500px)" srcset="img/reason_img-1500px.webp" type="image/webp">
-                            <source media="(max-width: 768px)" srcset="img/reason_img-2000px.webp" type="image/webp">
-                            <source media="(max-width: 1080px)" srcset="img/reason_img-2500px.webp" type="image/webp">
-                            <source media="(max-width: 2000px)" srcset="img/reason_img-3000px.webp" type="image/webp">
-                            <source srcset="img/reason_img-3500px.webp" type="image/webp">
+                            <source srcset="img/reason_img-1500px.webp" type="image/webp">
 
                             <!-- 非対応時 -->
-                            <source media="(max-width: 400px)" srcset="img/reason_img-1000px.png">
-                            <source media="(max-width: 500px)" srcset="img/reason_img-1500px.png">
-                            <source media="(max-width: 768px)" srcset="img/reason_img-2000px.png">
-                            <source media="(max-width: 1080px)" srcset="img/reason_img-2500px.png">
-                            <source media="(max-width: 2000px)" srcset="img/reason_img-3000px.png">
-                            <img src="img/reason_img-3500px.png" alt="">
+                            <img src="img/reason_img-1500px.png" alt="" width="128" height="125">
                         </picture>
 
                         <!-- テキスト -->
@@ -198,20 +168,10 @@
                         <!-- 画像 -->
                         <picture class="bl_reason_imgWrapper">
                             <!-- WebP -->
-                            <source media="(max-width: 400px)" srcset="img/reason_img2-1000px.webp" type="image/webp">
-                            <source media="(max-width: 500px)" srcset="img/reason_img2-1500px.webp" type="image/webp">
-                            <source media="(max-width: 768px)" srcset="img/reason_img2-2000px.webp" type="image/webp">
-                            <source media="(max-width: 1080px)" srcset="img/reason_img2-2500px.webp" type="image/webp">
-                            <source media="(max-width: 2000px)" srcset="img/reason_img2-3000px.webp" type="image/webp">
-                            <source srcset="img/reason_img2-3500px.webp" type="image/webp">
+                            <source srcset="img/reason_img2-1500px.webp" type="image/webp">
 
                             <!-- 非対応時 -->
-                            <source media="(max-width: 400px)" srcset="img/reason_img2-1000px.png">
-                            <source media="(max-width: 500px)" srcset="img/reason_img2-1500px.png">
-                            <source media="(max-width: 768px)" srcset="img/reason_img2-2000px.png">
-                            <source media="(max-width: 1080px)" srcset="img/reason_img2-2500px.png">
-                            <source media="(max-width: 2000px)" srcset="img/reason_img2-3000px.png">
-                            <img src="img/reason_img2-3500px.png" alt="">
+                            <img src="img/reason_img2-1500px.png" alt="" width="128" height="125">
                         </picture>
 
                         <!-- テキスト -->
@@ -235,20 +195,10 @@
                         <!-- 画像 -->
                         <picture class="bl_reason_imgWrapper">
                             <!-- WebP -->
-                            <source media="(max-width: 400px)" srcset="img/reason_img3-1000px.webp" type="image/webp">
-                            <source media="(max-width: 500px)" srcset="img/reason_img3-1500px.webp" type="image/webp">
-                            <source media="(max-width: 768px)" srcset="img/reason_img3-2000px.webp" type="image/webp">
-                            <source media="(max-width: 1080px)" srcset="img/reason_img3-2500px.webp" type="image/webp">
-                            <source media="(max-width: 2000px)" srcset="img/reason_img3-3000px.webp" type="image/webp">
-                            <source srcset="img/reason_img3-3500px.webp" type="image/webp">
+                            <source srcset="img/reason_img3-1500px.webp" type="image/webp">
 
                             <!-- 非対応時 -->
-                            <source media="(max-width: 400px)" srcset="img/reason_img3-1000px.png">
-                            <source media="(max-width: 500px)" srcset="img/reason_img3-1500px.png">
-                            <source media="(max-width: 768px)" srcset="img/reason_img3-2000px.png">
-                            <source media="(max-width: 1080px)" srcset="img/reason_img3-2500px.png">
-                            <source media="(max-width: 2000px)" srcset="img/reason_img3-3000px.png">
-                            <img src="img/reason_img3-3500px.png" alt="">
+                            <img src="img/reason_img3-1500px.png" alt="" width="128" height="125">
                         </picture>
 
                         <!-- テキスト -->
@@ -282,20 +232,10 @@
                     <!-- 画像 -->
                     <picture class="bl_secTtl_imgWrapper">
                         <!-- WebP -->
-                        <source media="(max-width: 400px)" srcset="img/section.webp" type="image/webp">
-                        <source media="(max-width: 500px)" srcset="img/section.webp" type="image/webp">
-                        <source media="(max-width: 768px)" srcset="img/section.webp" type="image/webp">
-                        <source media="(max-width: 1080px)" srcset="img/section_img-2500px.webp" type="image/webp">
-                        <source media="(max-width: 2000px)" srcset="img/section_img-3000px.webp" type="image/webp">
-                        <source srcset="img/section_img-3500px.webp" type="image/webp">
+                        <source srcset="img/section_img-2000px.webp" type="image/webp">
 
                         <!-- 非対応時 -->
-                        <source media="(max-width: 400px)" srcset="img/section_img-1000px.png">
-                        <source media="(max-width: 500px)" srcset="img/section_img-1500px.png">
-                        <source media="(max-width: 768px)" srcset="img/section_img-2000px.png">
-                        <source media="(max-width: 1080px)" srcset="img/section_img-2500px.png">
-                        <source media="(max-width: 2000px)" srcset="img/section_img-3000px.png">
-                        <img src="img/section_img-3500px.png" alt="">
+                        <img src="img/section_img-2000px.png" alt="" width="170" height="86">
                     </picture>
                 </div>
 
@@ -446,20 +386,10 @@
                     <!-- 画像 -->
                     <picture class="bl_secTtl2_imgWrapper">
                         <!-- WebP -->
-                        <source media="(max-width: 400px)" srcset="img/security_img-1000px.webp" type="image/webp">
-                        <source media="(max-width: 500px)" srcset="img/security_img-1500px.webp" type="image/webp">
-                        <source media="(max-width: 768px)" srcset="img/security_img-2000px.webp" type="image/webp">
-                        <source media="(max-width: 1080px)" srcset="img/security_img-2500px.webp" type="image/webp">
-                        <source media="(max-width: 2000px)" srcset="img/security_img-3000px.webp" type="image/webp">
-                        <source srcset="img/security_img-3500px.webp" type="image/webp">
+                        <source srcset="img/security_img-2000px.webp" type="image/webp">
 
                         <!-- 非対応時 -->
-                        <source media="(max-width: 400px)" srcset="img/security_img-1000px.png">
-                        <source media="(max-width: 500px)" srcset="img/security_img-1500px.png">
-                        <source media="(max-width: 768px)" srcset="img/security_img-2000px.png">
-                        <source media="(max-width: 1080px)" srcset="img/security_img-2500px.png">
-                        <source media="(max-width: 2000px)" srcset="img/security_img-3000px.png">
-                        <img src="img/security_img-3500px.png" alt="">
+                        <img src="img/security_img-2000px.png" alt="" width="177" height="196">
                     </picture>
                     <div>
                         <span class="bl_secTtl_en bl_secTtl_en__mt">Security</span>
@@ -564,20 +494,10 @@
                     <!-- 画像 -->
                     <picture class="bl_secTtl_imgWrapper">
                         <!-- WebP -->
-                        <source media="(max-width: 400px)" srcset="img/section_img-1000px.webp" type="image/webp">
-                        <source media="(max-width: 500px)" srcset="img/section_img-1500px.webp" type="image/webp">
-                        <source media="(max-width: 768px)" srcset="img/section_img-2000px.webp" type="image/webp">
-                        <source media="(max-width: 1080px)" srcset="img/section_img-2500px.webp" type="image/webp">
-                        <source media="(max-width: 2000px)" srcset="img/section_img-3000px.webp" type="image/webp">
-                        <source srcset="img/section_img-3500px.webp" type="image/webp">
+                        <source srcset="img/section_img-2000px.webp" type="image/webp">
 
                         <!-- 非対応時 -->
-                        <source media="(max-width: 400px)" srcset="img/section_img-1000px.png">
-                        <source media="(max-width: 500px)" srcset="img/section_img-1500px.png">
-                        <source media="(max-width: 768px)" srcset="img/section_img-2000px.png">
-                        <source media="(max-width: 1080px)" srcset="img/section_img-2500px.png">
-                        <source media="(max-width: 2000px)" srcset="img/section_img-3000px.png">
-                        <img src="img/section_img-3500px.png" alt="">
+                        <img src="img/section_img-2000px.png" alt="" width="128" height="125">
                     </picture>
                 </div>
 
@@ -760,20 +680,10 @@
                     <!-- 画像 -->
                     <picture class="bl_secTtl_imgWrapper">
                         <!-- WebP -->
-                        <source media="(max-width: 400px)" srcset="img/section_img-1000px.webp" type="image/webp">
-                        <source media="(max-width: 500px)" srcset="img/section_img-1500px.webp" type="image/webp">
-                        <source media="(max-width: 768px)" srcset="img/section_img-2000px.webp" type="image/webp">
-                        <source media="(max-width: 1080px)" srcset="img/section_img-2500px.webp" type="image/webp">
-                        <source media="(max-width: 2000px)" srcset="img/section_img-3000px.webp" type="image/webp">
-                        <source srcset="img/section_img-3500px.webp" type="image/webp">
+                        <source srcset="img/section_img-2000px.webp" type="image/webp">
 
                         <!-- 非対応時 -->
-                        <source media="(max-width: 400px)" srcset="img/section_img-1000px.png">
-                        <source media="(max-width: 500px)" srcset="img/section_img-1500px.png">
-                        <source media="(max-width: 768px)" srcset="img/section_img-2000px.png">
-                        <source media="(max-width: 1080px)" srcset="img/section_img-2500px.png">
-                        <source media="(max-width: 2000px)" srcset="img/section_img-3000px.png">
-                        <img src="img/section_img-3500px.png" alt="">
+                        <img src="img/section_img-2000px.png" alt="" width="128" height="125">
                     </picture>
                 </div>
 
@@ -786,19 +696,10 @@
                             <!-- サムネイル -->
                             <picture class="bl_post_thumbnailWrapper">
                                 <!-- WebP -->
-                                <source media="(max-width: 400px)" srcset="img/post_thumbnail-1000px.webp" type="image/webp">
-                                <source media="(max-width: 500px)" srcset="img/post_thumbnail-1500px.webp" type="image/webp">
-                                <source media="(max-width: 768px)" srcset="img/post_thumbnail-2000px.webp" type="image/webp">
-                                <source media="(max-width: 1080px)" srcset="img/post_thumbnail-2500px.webp" type="image/webp">
-                                <source media="(max-width: 2000px)" srcset="img/post_thumbnail-2500px.webp" type="image/webp">
-                                <source srcset="img/post_thumbnail-3500px.webp" type="image/webp">
+                                <source srcset="img/post_thumbnail-1500px.webp" type="image/webp">
 
-                                <source media="(max-width: 400px)" srcset="img/post_thumbnail-1000px.png">
-                                <source media="(max-width: 500px)" srcset="img/post_thumbnail-1500px.png">
-                                <source media="(max-width: 768px)" srcset="img/post_thumbnail-2000px.png">
-                                <source media="(max-width: 1080px)" srcset="img/post_thumbnail-2500px.png">
-                                <source media="(max-width: 2000px)" srcset="img/post_thumbnail-3000px.png">
-                                <img src="img/post_thumbnail-3500px.png" alt="">
+                                <!-- 非対応時 -->
+                                <img src="img/post_thumbnail-1500px.png" alt="" width="150" height="100">
                             </picture>
                             <!-- 記事タイトル -->
                             <figcaption class="ly_post_ttl">
@@ -815,20 +716,10 @@
                             <!-- サムネイル -->
                             <picture class="bl_post_thumbnailWrapper">
                                 <!-- WebP -->
-                                <source media="(max-width: 400px)" srcset="img/post_thumbnail-1000px.webp" type="image/webp">
-                                <source media="(max-width: 500px)" srcset="img/post_thumbnail-1500px.webp" type="image/webp">
-                                <source media="(max-width: 768px)" srcset="img/post_thumbnail-2000px.webp" type="image/webp">
-                                <source media="(max-width: 1080px)" srcset="img/post_thumbnail-2500px.webp" type="image/webp">
-                                <source media="(max-width: 2000px)" srcset="img/post_thumbnail-2500px.webp" type="image/webp">
-                                <source srcset="img/post_thumbnail-3500px.webp" type="image/webp">
+                                <source srcset="img/post_thumbnail-1500px.webp" type="image/webp">
 
                                 <!-- 非対応時 -->
-                                <source media="(max-width: 400px)" srcset="img/post_thumbnail-1000px.png">
-                                <source media="(max-width: 500px)" srcset="img/post_thumbnail-1500px.png">
-                                <source media="(max-width: 768px)" srcset="img/post_thumbnail-2000px.png">
-                                <source media="(max-width: 1080px)" srcset="img/post_thumbnail-2500px.png">
-                                <source media="(max-width: 2000px)" srcset="img/post_thumbnail-3000px.png">
-                                <img src="img/post_thumbnail-3500px.png" alt="">
+                                <img src="img/post_thumbnail-1500px.png" alt="" width="150" height="100">
                             </picture>
                             <!-- 記事タイトル -->
                             <figcaption class="ly_post_ttl">
@@ -845,20 +736,10 @@
                             <!-- サムネイル -->
                             <picture class="bl_post_thumbnailWrapper">
                                 <!-- WebP -->
-                                <source media="(max-width: 400px)" srcset="img/post_thumbnail-1000px.webp" type="image/webp">
-                                <source media="(max-width: 500px)" srcset="img/post_thumbnail-1500px.webp" type="image/webp">
-                                <source media="(max-width: 768px)" srcset="img/post_thumbnail-2000px.webp" type="image/webp">
-                                <source media="(max-width: 1080px)" srcset="img/post_thumbnail-2500px.webp" type="image/webp">
-                                <source media="(max-width: 2000px)" srcset="img/post_thumbnail-2500px.webp" type="image/webp">
-                                <source srcset="img/post_thumbnail-3500px.webp" type="image/webp">
+                                <source srcset="img/post_thumbnail-1500px.webp" type="image/webp">
 
                                 <!-- 非対応時 -->
-                                <source media="(max-width: 400px)" srcset="img/post_thumbnail-1000px.png">
-                                <source media="(max-width: 500px)" srcset="img/post_thumbnail-1500px.png">
-                                <source media="(max-width: 768px)" srcset="img/post_thumbnail-2000px.png">
-                                <source media="(max-width: 1080px)" srcset="img/post_thumbnail-2500px.png">
-                                <source media="(max-width: 2000px)" srcset="img/post_thumbnail-3000px.png">
-                                <img src="img/post_thumbnail-3500px.png" alt="">
+                                <img src="img/post_thumbnail-1500px.png" alt="" width="150" height="100">
                             </picture>
                             <!-- 記事タイトル -->
                             <figcaption class="ly_post_ttl">
@@ -875,20 +756,10 @@
                             <!-- サムネイル -->
                             <picture class="bl_post_thumbnailWrapper">
                                 <!-- WebP -->
-                                <source media="(max-width: 400px)" srcset="img/post_thumbnail-1000px.webp" type="image/webp">
-                                <source media="(max-width: 500px)" srcset="img/post_thumbnail-1500px.webp" type="image/webp">
-                                <source media="(max-width: 768px)" srcset="img/post_thumbnail-2000px.webp" type="image/webp">
-                                <source media="(max-width: 1080px)" srcset="img/post_thumbnail-2500px.webp" type="image/webp">
-                                <source media="(max-width: 2000px)" srcset="img/post_thumbnail-2500px.webp" type="image/webp">
-                                <source srcset="img/post_thumbnail-3500px.webp" type="image/webp">
+                                <source srcset="img/post_thumbnail-1500px.webp" type="image/webp">
 
                                 <!-- 非対応時 -->
-                                <source media="(max-width: 400px)" srcset="img/post_thumbnail-1000px.png">
-                                <source media="(max-width: 500px)" srcset="img/post_thumbnail-1500px.png">
-                                <source media="(max-width: 768px)" srcset="img/post_thumbnail-2000px.png">
-                                <source media="(max-width: 1080px)" srcset="img/post_thumbnail-2500px.png">
-                                <source media="(max-width: 2000px)" srcset="img/post_thumbnail-3000px.png">
-                                <img src="img/post_thumbnail-3500px.png" alt="">
+                                <img src="img/post_thumbnail-1500px.png" alt="" width="150" height="100">
                             </picture>
                             <!-- 記事タイトル -->
                             <figcaption class="ly_post_ttl">
@@ -924,20 +795,10 @@
                 <!-- 画像 -->
                 <picture class="bl_cta_imgWrapper">
                     <!-- WebP -->
-                    <source media="(max-width: 400px)" srcset="img/section_img-1000px.webp" type="image/webp">
-                    <source media="(max-width: 500px)" srcset="img/section_img-1500px.webp" type="image/webp">
-                    <source media="(max-width: 768px)" srcset="img/section_img-2000px.webp" type="image/webp">
-                    <source media="(max-width: 1080px)" srcset="img/section_img-2500px.webp" type="image/webp">
-                    <source media="(max-width: 2000px)" srcset="img/section_img-2500px.webp" type="image/webp">
-                    <source srcset="img/section_img-3500px.webp" type="image/webp">
+                    <source srcset="img/section_img-2000px.webp" type="image/webp">
 
                     <!-- 非対応時 -->
-                    <source media="(max-width: 400px)" srcset="img/section_img-1000px.png">
-                    <source media="(max-width: 500px)" srcset="img/section_img-1500px.png">
-                    <source media="(max-width: 768px)" srcset="img/section_img-2000px.png">
-                    <source media="(max-width: 1080px)" srcset="img/section_img-2500px.png">
-                    <source media="(max-width: 2000px)" srcset="img/section_img-3000px.png">
-                    <img src="img/section_img-3500px.png" alt="">
+                    <img src="img/section_img-2000px.png" alt="" width="128" height="125">
                 </picture>
 
                 <!-- コンテンツ -->
@@ -960,20 +821,10 @@
                     <!-- 画像 -->
                     <picture class="bl_cta_imgWrapper">
                         <!-- WebP -->
-                        <source media="(max-width: 400px)" srcset="img/section_img2-1000px.webp" type="image/webp">
-                        <source media="(max-width: 500px)" srcset="img/section_img2-1500px.webp" type="image/webp">
-                        <source media="(max-width: 768px)" srcset="img/section_img2-2000px.webp" type="image/webp">
-                        <source media="(max-width: 1080px)" srcset="img/section_img2-2500px.webp" type="image/webp">
-                        <source media="(max-width: 2000px)" srcset="img/section_img2-2500px.webp" type="image/webp">
-                        <source srcset="img/section_img2-3500px.webp" type="image/webp">
+                        <source srcset="img/section_img2-2000px.webp" type="image/webp">
 
                         <!-- 非対応時 -->
-                        <source media="(max-width: 400px)" srcset="img/section_img2-1000px.png">
-                        <source media="(max-width: 500px)" srcset="img/section_img2-1500px.png">
-                        <source media="(max-width: 768px)" srcset="img/section_img2-2000px.png">
-                        <source media="(max-width: 1080px)" srcset="img/section_img2-2500px.png">
-                        <source media="(max-width: 2000px)" srcset="img/section_img2-3000px.png">
-                        <img src="img/section_img2-3500px.png" alt="">
+                        <img src="img/section_img2-2000px.png" alt="" width="224" height="139">
                     </picture>
 
                     <div class="ly_btn">
